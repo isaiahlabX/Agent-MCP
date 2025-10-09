@@ -7,9 +7,9 @@
     "npm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "node scripts/start-dev.js",
-    "build": "NODE_ENV=production next build",
-    "start": "next start",
+    "dev": "node init && node scripts/start-dev.js",
+    "build": "node init && NODE_ENV=production next build",
+    "start": "node init && next start",
     "lint": "next lint"
   },
   "dependencies": {

@@ -8,9 +8,9 @@
     "agent-mcp": "build/examples/server/agentMcpServer.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx watch src/examples/server/agentMcpServer.ts",
-    "start": "node build/examples/server/agentMcpServer.js",
+    "build": "node init && tsc",
+    "dev": "node init && tsx watch src/examples/server/agentMcpServer.ts",
+    "start": "node init && node build/examples/server/agentMcpServer.js",
     "server": "tsx src/examples/server/agentMcpServer.ts",
     "test-client": "tsx src/examples/client/streamableHttpWithSseFallbackClient.ts",
     "clean": "rm -rf build",
